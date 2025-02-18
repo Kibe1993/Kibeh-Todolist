@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, indigo, black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  max-width: 700px;
+  background: wheat;
+  padding: 20px 30px;
+  border: 2px orange solid;
+  border-radius: 15px;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.heading::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 32px;
+  background: orange;
+  margin-bottom: 15px;
+}
+
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 30% 15%;
+  justify-content: space-between;
+}
+.input-col {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.date-col {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.button-col {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#input-box {
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  background: transparent;
+  border: 1px black solid;
+  border-radius: 10px;
+  outline: none;
+}
+#date-box {
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  background: transparent;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+.add-btn {
+  width: 100px;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  height: 40px;
+  background-color: greenyellow;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.delete-btn {
+  width: 100px;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  height: 40px;
+  background-color: rgb(255, 61, 47);
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
+  padding: 8px 15px;
+}
+.completed {
+  text-decoration: line-through;
+  color: red;
+}
